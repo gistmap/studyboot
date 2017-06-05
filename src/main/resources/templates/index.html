@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script>
+        var param = "id="+1+"&amp;name="+'a'+"&amp;age="+18;
+        $(function () {
+            $.ajax({
+                type: "POST",
+                url: "users/",
+                data: param,
+                dateType: "text",
+                success: function(result) {
+                    console.log(result)
+                }
+            });
+        });
+
+        $(function () {
+            $.ajax({
+                type: "GET",
+                url: "users/",
+                data: "",
+                dateType: "text",
+                success: function(result) {
+                    console.log(result)
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>ssssss</h1>
+</body>
+</html>
