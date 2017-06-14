@@ -13,7 +13,11 @@ public class IndexController {
 
     @RequestMapping("/index")
     public String index(ModelMap map) {
-        System.out.println("xxxxx");
         return "index";
+    }
+
+    @RequestMapping("/halo")
+    public String halo(ModelMap map) {
+        return "table";
     }
 }
